@@ -1,0 +1,42 @@
+{
+    "plugins": {
+        "add": [
+            "plugin-lighthouse",
+            "plugin-gpsi"
+        ]
+    },
+    "gpsi": {
+        "key": "AIzaSyBxnezgZyEmXcoAqTfvWnY1kb2evjk6-hs"
+    },
+    "mobile": false,
+    "headless": true,
+    "siteType": 0,
+    "lighthouse": {
+        "iterations": 1,
+        "extends": "lighthouse:default"
+    },
+    "html": {
+        "assetsBaseURL": "http://localhost:5000/"
+    },
+    "sustainable": {
+        "enable": true
+    },
+    "mysqldb": {
+        "host": "localhost",
+        "port": "8086",
+        "user": "root",
+        "password": "35333",
+        "database": "lighthouse",
+        "table": "sitetypes",
+        "includeQueryParams": "true"
+    },
+    "metrics": {
+        "filter": [
+            "*-",
+            "gpsi.pageSummary.*",
+            "gpsi.summary.*"
+        ],
+        "list": true,
+        "filterList": true
+    }
+}

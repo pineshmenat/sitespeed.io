@@ -100,6 +100,7 @@
     "lodash.set": "4.3.2",
     "lodash.union": "4.6.0",
     "markdown": "0.5.0",
+    "mysql2": "^2.1.0",
     "node-slack": "0.0.7",
     "p-limit": "2.2.2",
     "pagexray": "2.5.9",

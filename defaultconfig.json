@@ -1,0 +1,478 @@
+{
+  "_": ["https://missing.csail.mit.edu/"],
+  "config": "config.json",
+  "n": 1,
+  "browsertime": {
+    "iterations": 1,
+    "headless": true,
+    "browser": "chrome",
+    "xvfb": false,
+    "xvfbParams": {
+      "display": 99
+    },
+    "xvfb-params": {
+      "display": 99
+    },
+    "spa": false,
+    "connectivity": {
+      "profile": "native",
+      "engine": "external"
+    },
+    "pageCompleteWaitTime": 5000,
+    "page-complete-wait-time": 5000,
+    "pageCompleteCheckInactivity": false,
+    "page-complete-check-inactivity": false,
+    "pageCompleteCheckPollTimeout": 1500,
+    "page-complete-check-poll-timeout": 1500,
+    "pageCompleteCheckStartWait": 500,
+    "page-complete-check-start-wait": 500,
+    "pageLoadStrategy": "none",
+    "page-load-strategy": "none",
+    "viewPort": "1366x708",
+    "view-port": "1366x708",
+    "scriptInput": {
+      "longTask": 50
+    },
+    "script-input": {
+      "long-task": 50
+    },
+    "videoParams": {
+      "framerate": 30,
+      "crf": 23,
+      "addTimer": true,
+      "filmstripFullSize": false,
+      "filmstripQuality": 75,
+      "createFilmstrip": true
+    },
+    "video-params": {
+      "framerate": 30,
+      "crf": 23,
+      "add-timer": true,
+      "filmstrip-full-size": false,
+      "filmstrip-quality": 75,
+      "create-filmstrip": true
+    },
+    "tcpdump": false,
+    "firefox": {
+      "includeResponseBodies": "none",
+      "include-response-bodies": "none",
+      "geckoProfiler": false,
+      "gecko-profiler": false,
+      "geckoProfilerParams": {
+        "features": "js,stackwalk,leaf",
+        "threads": "GeckoMain,Compositor,Renderer",
+        "bufferSize": 1000000
+      },
+      "gecko-profiler-params": {
+        "features": "js,stackwalk,leaf",
+        "threads": "GeckoMain,Compositor,Renderer",
+        "buffer-size": 1000000
+      },
+      "windowRecorder": false,
+      "window-recorder": false,
+      "disableSafeBrowsing": true,
+      "disable-safe-browsing": true,
+      "disableTrackingProtection": true,
+      "disable-tracking-protection": true
+    },
+    "android": false,
+    "androidRooted": false,
+    "android-rooted": false,
+    "androidBatteryTemperatureWaitTimeInSeconds": 120,
+    "android-battery-temperature-wait-time-in-seconds": 120,
+    "chrome": {
+      "cdp": {
+        "performance": true
+      },
+      "ignoreCertificateErrors": true,
+      "ignore-certificate-errors": true,
+      "includeResponseBodies": "none",
+      "include-response-bodies": "none"
+    },
+    "safari": {
+      "ios": false,
+      "useTechnologyPreview": false,
+      "use-technology-preview": false,
+      "useSimulator": false,
+      "use-simulator": false
+    },
+    "iqr": false,
+    "screenshot": true,
+    "screenshotParams": {
+      "type": "png",
+      "png": {
+        "compressionLevel": 6
+      },
+      "jpg": {
+        "quality": 80
+      },
+      "maxSize": 2000
+    },
+    "screenshot-params": {
+      "type": "png",
+      "png": {
+        "compression-level": 6
+      },
+      "jpg": {
+        "quality": 80
+      },
+      "max-size": 2000
+    }
+  },
+  "plugins": {
+    "add": ["plugin-lighthouse", "plugin-gpsi"]
+  },
+  "gpsi": {
+    "key": "AIzaSyBxnezgZyEmXcoAqTfvWnY1kb2evjk6-hs"
+  },
+  "mobile": false,
+  "headless": true,
+  "siteType": 0,
+  "lighthouse": {
+    "iterations": 1,
+    "extends": "lighthouse:default"
+  },
+  "html": {
+    "assetsBaseURL": "http://localhost:5000/",
+    "assets-base-url": "http://localhost:5000/",
+    "showAllWaterfallSummary": false,
+    "show-all-waterfall-summary": false,
+    "fetchHARFiles": false,
+    "fetch-har-files": false,
+    "logDownloadLink": false,
+    "log-download-link": false,
+    "topListSize": 10,
+    "top-list-size": 10,
+    "showScript": false,
+    "show-script": false,
+    "pageSummaryMetrics": [
+      "transferSize.total",
+      "requests.total",
+      "thirdParty.requests",
+      "transferSize.javascript",
+      "transferSize.css",
+      "transferSize.image",
+      "score.performance"
+    ],
+    "page-summary-metrics": [
+      "transferSize.total",
+      "requests.total",
+      "thirdParty.requests",
+      "transferSize.javascript",
+      "transferSize.css",
+      "transferSize.image",
+      "score.performance"
+    ],
+    "summaryBoxes": [
+      "score.score",
+      "score.accessibility",
+      "score.bestpractice",
+      "score.privacy",
+      "score.performance",
+      "timings.firstPaint",
+      "timings.firstContentfulPaint",
+      "timings.fullyLoaded",
+      "timings.pageLoadTime",
+      "timings.largestContentfulPaint",
+      "timings.FirstVisualChange",
+      "timings.LastVisualChange",
+      "timings.SpeedIndex",
+      "timings.PerceptualSpeedIndex",
+      "timings.VisualReadiness",
+      "timings.VisualComplete",
+      "pageinfo.layoutShift",
+      "requests.total",
+      "requests.javascript",
+      "requests.css",
+      "requests.image",
+      "transferSize.total",
+      "transferSize.html",
+      "transferSize.javascript",
+      "contentSize.javascript",
+      "transferSize.css",
+      "transferSize.image",
+      "thirdParty.transferSize",
+      "thirdParty.requests",
+      "webpagetest.SpeedIndex",
+      "webpagetest.lastVisualChange",
+      "webpagetest.render",
+      "webpagetest.visualComplete",
+      "webpagetest.visualComplete95",
+      "webpagetest.TTFB",
+      "webpagetest.fullyLoaded",
+      "axe.critical",
+      "axe.serious",
+      "axe.minor",
+      "axe.moderate",
+      "cpu.longTasksTotalDuration",
+      "cpu.longTasks",
+      "cpu.totalBlockingTime",
+      "cpu.maxPotentialFid",
+      "sustainable.totalCO2",
+      "sustainable.co2PerPageView",
+      "sustainable.co2FirstParty",
+      "sustainable.co2ThirdParty"
+    ],
+    "summary-boxes": [
+      "score.score",
+      "score.accessibility",
+      "score.bestpractice",
+      "score.privacy",
+      "score.performance",
+      "timings.firstPaint",
+      "timings.firstContentfulPaint",
+      "timings.fullyLoaded",
+      "timings.pageLoadTime",
+      "timings.largestContentfulPaint",
+      "timings.FirstVisualChange",
+      "timings.LastVisualChange",
+      "timings.SpeedIndex",
+      "timings.PerceptualSpeedIndex",
+      "timings.VisualReadiness",
+      "timings.VisualComplete",
+      "pageinfo.layoutShift",
+      "requests.total",
+      "requests.javascript",
+      "requests.css",
+      "requests.image",
+      "transferSize.total",
+      "transferSize.html",
+      "transferSize.javascript",
+      "contentSize.javascript",
+      "transferSize.css",
+      "transferSize.image",
+      "thirdParty.transferSize",
+      "thirdParty.requests",
+      "webpagetest.SpeedIndex",
+      "webpagetest.lastVisualChange",
+      "webpagetest.render",
+      "webpagetest.visualComplete",
+      "webpagetest.visualComplete95",
+      "webpagetest.TTFB",
+      "webpagetest.fullyLoaded",
+      "axe.critical",
+      "axe.serious",
+      "axe.minor",
+      "axe.moderate",
+      "cpu.longTasksTotalDuration",
+      "cpu.longTasks",
+      "cpu.totalBlockingTime",
+      "cpu.maxPotentialFid",
+      "sustainable.totalCO2",
+      "sustainable.co2PerPageView",
+      "sustainable.co2FirstParty",
+      "sustainable.co2ThirdParty"
+    ]
+  },
+  "sustainable": {
+    "enable": true,
+    "disableHosting": false,
+    "disable-hosting": false,
+    "useGreenWebHostingAPI": false,
+    "use-green-web-hosting-api": false
+  },
+  "mysqldb": {
+    "host": "localhost",
+    "port": 8086,
+    "user": "root",
+    "password": 35333,
+    "database": "lighthouse",
+    "table": "sitetypes",
+    "includeQueryParams": "true"
+  },
+  "metrics": {
+    "filter": ["*-", "gpsi.pageSummary.*", "gpsi.summary.*"],
+    "list": true,
+    "filterList": true,
+    "filter-list": true
+  },
+  "debugMessages": false,
+  "debug-messages": false,
+  "b": "chrome",
+  "browser": "chrome",
+  "xvfb": false,
+  "xvfbParams": {
+    "display": 99
+  },
+  "xvfb-params": {
+    "display": 99
+  },
+  "spa": false,
+  "c": "native",
+  "connectivity": {
+    "engine": "external"
+  },
+  "pageCompleteWaitTime": 5000,
+  "page-complete-wait-time": 5000,
+  "pageCompleteCheckInactivity": false,
+  "page-complete-check-inactivity": false,
+  "pageCompleteCheckPollTimeout": 1500,
+  "page-complete-check-poll-timeout": 1500,
+  "pageCompleteCheckStartWait": 500,
+  "page-complete-check-start-wait": 500,
+  "pageLoadStrategy": "none",
+  "page-load-strategy": "none",
+  "viewPort": "1366x708",
+  "view-port": "1366x708",
+  "minLongTaskLength": 50,
+  "min-long-task-length": 50,
+  "videoParams": {
+    "framerate": 30,
+    "crf": 23,
+    "addTimer": true,
+    "filmstripFullSize": false,
+    "filmstripQuality": 75,
+    "createFilmstrip": true
+  },
+  "fps": 30,
+  "video-params": {
+    "framerate": 30,
+    "crf": 23,
+    "add-timer": true,
+    "filmstrip-full-size": false,
+    "filmstrip-quality": 75,
+    "create-filmstrip": true
+  },
+  "filmstrip": {
+    "showAll": false,
+    "show-all": false
+  },
+  "tcpdump": false,
+  "firefox": {
+    "includeResponseBodies": "none",
+    "include-response-bodies": "none",
+    "geckoProfiler": false,
+    "gecko-profiler": false,
+    "geckoProfilerParams": {
+      "features": "js,stackwalk,leaf",
+      "threads": "GeckoMain,Compositor,Renderer",
+      "bufferSize": 1000000
+    },
+    "gecko-profiler-params": {
+      "features": "js,stackwalk,leaf",
+      "threads": "GeckoMain,Compositor,Renderer",
+      "buffer-size": 1000000
+    },
+    "windowRecorder": false,
+    "window-recorder": false,
+    "disableSafeBrowsing": true,
+    "disable-safe-browsing": true,
+    "disableTrackingProtection": true,
+    "disable-tracking-protection": true
+  },
+  "android": false,
+  "androidRooted": false,
+  "android-rooted": false,
+  "androidBatteryTemperatureWaitTimeInSeconds": 120,
+  "android-battery-temperature-wait-time-in-seconds": 120,
+  "chrome": {
+    "cdp": {
+      "performance": true
+    },
+    "ignoreCertificateErrors": true,
+    "ignore-certificate-errors": true,
+    "includeResponseBodies": "none",
+    "include-response-bodies": "none"
+  },
+  "safari": {
+    "ios": false,
+    "useTechnologyPreview": false,
+    "use-technology-preview": false,
+    "useSimulator": false,
+    "use-simulator": false
+  },
+  "grafana": {
+    "port": 80,
+    "annotationScreenshot": false,
+    "annotation-screenshot": false
+  },
+  "graphite": {
+    "port": 2003,
+    "httpPort": 8080,
+    "http-port": 8080,
+    "namespace": "sitespeed_io.default",
+    "includeQueryParams": false,
+    "include-query-params": false,
+    "arrayTags": true,
+    "array-tags": true,
+    "annotationScreenshot": false,
+    "annotation-screenshot": false,
+    "statsd": false,
+    "bulkSize": null,
+    "bulk-size": null,
+    "experimental": {
+      "perIteration": false,
+      "per-iteration": false
+    }
+  },
+  "screenshot": {
+    "type": "png",
+    "png": {
+      "compressionLevel": 6,
+      "compression-level": 6
+    },
+    "jpg": {
+      "quality": 80
+    },
+    "maxSize": 2000,
+    "max-size": 2000
+  },
+  "influxdb": {
+    "protocol": "http",
+    "port": 8086,
+    "database": "sitespeed",
+    "tags": "category=default",
+    "includeQueryParams": false,
+    "include-query-params": false,
+    "groupSeparator": "_",
+    "group-separator": "_",
+    "annotationScreenshot": false,
+    "annotation-screenshot": false
+  },
+  "webpagetest": {
+    "host": "https://www.webpagetest.org",
+    "location": "Dulles:Chrome",
+    "connectivity": "Cable",
+    "runs": 3,
+    "includeRepeatView": false,
+    "include-repeat-view": false,
+    "private": true,
+    "timeline": false
+  },
+  "slack": {
+    "userName": "Sitespeed.io",
+    "user-name": "Sitespeed.io",
+    "type": "all",
+    "limitWarning": 90,
+    "limit-warning": 90,
+    "limitError": 80,
+    "limit-error": 80,
+    "limitMetric": "coachScore",
+    "limit-metric": "coachScore"
+  },
+  "s3": {
+    "removeLocalResult": false,
+    "remove-local-result": false
+  },
+  "gcs": {
+    "public": false,
+    "gzip": false,
+    "removeLocalResult": false,
+    "remove-local-result": false
+  },
+  "summary": false,
+  "summary-detail": false,
+  "summaryDetail": false,
+  "gzipHAR": false,
+  "gzip-har": false,
+  "utc": false,
+  "logToFile": false,
+  "log-to-file": false,
+  "useHash": false,
+  "use-hash": false,
+  "multi": false,
+  "verbose": 0,
+  "v": 0,
+  "debug": 0,
+  "urlsMetaData": {}
+}
